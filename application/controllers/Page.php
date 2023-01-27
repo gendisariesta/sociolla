@@ -16,9 +16,10 @@ class Page extends CI_Controller
     }
     public function home()
     {
+    $data['list_data'] = $this->db->get('produk');
       $this->load->view('templates/header');
       $this->load->view('templates/navbar');
-      $this->load->view('page/home');
+      $this->load->view('page/home',$data);
       $this->load->view('templates/footer');
     }
     public function produk(){
