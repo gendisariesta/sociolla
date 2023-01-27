@@ -38,11 +38,13 @@ class Account extends CI_Controller
             'jenis_kelamin' => $this->input->post('ekelamin'),
             // 'email' => $this->input->post('eemail'),
             // 'password' => password_hash($this->input->post('password1'), PASSWORD_DEFAULT),
-            // 'role_id' => $this->input->post('role_id'),
+            'role_id' => $this->input->post('role_id'),
         ];
+
         $this->db->update('user', $data, array("id" => $this->input->post('id')));
         $this->session->set_flashdata('pesan', '<div class="alert alert-primary" role="alert">
         Akun anda berhasil diperbaharui! </div>');
+
         redirect('Account/profil');
     }
     function bag()

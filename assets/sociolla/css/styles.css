@@ -3049,15 +3049,21 @@ textarea.form-control-lg {
   background-color: #2937f0;
   border-color: #2937f0;
 }
+.btn-pink-dark {
+  color: #fdeef5;
+  background-color: #aa045c  ;
+  border-color: #fdeef5;
+  border-radius: 10px;
+}
 .btn-pink {
   color: #fe64b5;
   background-color: #fdeef5  ;
-  border-color: #fdeef5
+  border-color: #fdeef5;
 }
 .btn-pink:hover {
   color: #aa045c;
   background-color: #fdeef5  ;
-  border-color: #fdeef5
+  border-color: #fdeef5;
 }
 
 .btn-primary:hover {
@@ -7726,7 +7732,9 @@ textarea.form-control-lg {
 .lh-lg {
   line-height: 2 !important;
 }
-
+.text-pink {
+  color: var(--bs-pink);
+}
 .text-start {
   text-align: left !important;
 }

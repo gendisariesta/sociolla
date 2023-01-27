@@ -36,12 +36,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                    <a class="navbar-brand" href="<?= base_url('account/bag'); ?>">
-                        <span class="d-flex align-items-center">
-                            <i class="bi-bag-plus me-2"></i>
-                            <span class="small">My Bag</span>
-                        </span>
-                    </a>
+                    
                 </ul>
 
                 <a class="btn btn-pink rounded-pill px-3 mb-2 mb-lg-0 navbar-brand" href="<?= base_url('Account/profil'); ?>">

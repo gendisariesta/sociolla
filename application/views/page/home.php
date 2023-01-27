@@ -66,36 +66,23 @@
   <div class="container px-5">
     <div class="row">
       <div class="owl-carousel owl-theme" id="owl-carousel-1">
-        <div class="item">
-          <div class="card">
-            <img class="card-img-top" src="blablabla" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+        <?php
+        $no = 1;
+        foreach ($list_data->result() as $data) { ?>
+          <div class="item">
+            <div class="card">
+              <img class="card-img-top" src="<?= base_url($data->foto); ?>" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title"><?= $data->nama_produk ?></h5>
+                <p class="card-text"><?= $data->deskripsi ?></p>
+                <p class="mb-0 text-pink">Price: IDR <?= $data->harga ?></p>
+                <p class="mb-3" style="right:0">Stok: <?= $data->stok ?></p>
+                <a href="#" class="btn btn-pink-dark">Beli Sekarang</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="item">
-          <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
+        <?php $no++;
+        } ?>
       </div>
     </div>
   </div>
