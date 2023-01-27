@@ -64,7 +64,7 @@ class Auth extends CI_Controller
         $this->form_validation->set_rules('alamat', 'Alamat', 'required|trim', ['required' => 'Alamat harus diisi']);
         $this->form_validation->set_rules('jenis_kelamin', 'Jenis_Kelamin', 'required', ['required' => 'Jenis Kelamin harus dipilih']);
         if ($this->form_validation->run() == false) {
-            $data['title'] = 'Daftar';
+            $data['title'] = 'Register';
             $this->load->view('templates/header', $data);
             $this->load->view('templates/navbar');
             $this->load->view('auth/registration');

@@ -1,4 +1,4 @@
-<br><br><br>
+<section id="features">
 <div class="container text-left mt-12">
     <div class="row">
         <div class="col-md col-sm">
@@ -33,31 +33,19 @@
                                         <th>Jenis Kelamin</th>
                                         <td><?= $user['jenis_kelamin'] ?></td>
                                     </tr>
-                                    <tr>
-                                        <th>Kata Sandi</th>
-                                        <td><?= md5($user['password']) ?></td>
-                                    </tr>
-
                                 </table>
-                                <a href="<?= base_url('page/edit_akun') ?>" class="btn btn-secondary btn-block">Edit</a>
+                                <a href="<?= base_url('Account/edit_akun') ?>" class="btn btn-secondary btn-block">Edit</a>
                             </div>
+                            
                         </div>
                     </div>
+                    <a class="btn btn-primary" href="<?= base_url('auth/logout'); ?>">Logout</a>
                 </div>
             </form>
         </div>
         <div class="col-md col-sm">
-        </div>
+            
+            </div>
     </div>
 </div>
-<br><br><br>
-<script src="<?= base_url('assets/sistem/tentangkami/') ?>js/jquery.min.js"></script>
-<script src="<?= base_url('assets/sistem/tentangkami/') ?>js/bootstrap.min.js"></script>
-<script src="<?= base_url('assets/sistem/tentangkami/') ?>js/aos.js"></script>
-<script src="<?= base_url('assets/sistem/tentangkami/') ?>js/owl.carousel.min.js"></script>
-<script src="<?= base_url('assets/sistem/tentangkami/') ?>js/smoothscroll.js"></script>
-<script src="<?= base_url('assets/sistem/tentangkami/') ?>js/custom.js"></script>
-
-</body>
-
-</html>
+</section>

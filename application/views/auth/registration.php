@@ -20,7 +20,6 @@
                             <div class="form-group row">
                                 <div class="col-sm-12 mb-2">
                                     <select class="form-control" name="jenis_kelamin" id="jenis_kelamin">
-                                        <option>Jenis Kelamin</option>
                                         <option value="Laki-laki">Laki-laki</option>
                                         <option value="Perempuan">Perempuan</option>
                                         <?= form_error('jenis_kelamin', '<small class="text-danger pl-3">', '</small>'); ?>
