@@ -24,7 +24,7 @@
                 </p>
                 <p class="mb-0 fs-7 fw-bold text-black text-start">Nama
                 </p>
-                <p class="mb-2 fs-7 text-black text-start">Yohanes Perdana Putra
+                <p class="mb-2 fs-7 text-black text-start">Siapa Namanya
                 </p>
                 <p class="mb-0 fs-7 fw-bold text-black text-start">NIM
                 </p>

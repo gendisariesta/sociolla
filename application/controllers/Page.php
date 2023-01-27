@@ -22,7 +22,7 @@ class Page extends CI_Controller
       $this->load->view('templates/footer');
     }
     public function produk(){
-        $data['produk'] = $this->db->get_where('produk')->row_array();
+        $data['list_data'] = $this->db->get('produk');
         $this->load->view('templates/header');
         $this->load->view('templates/navbar');
         $this->load->view('page/produk',$data);

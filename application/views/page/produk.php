@@ -1,28 +1,25 @@
-<section id="features">
+<section class="bg-light" id="#">
   <div class="container px-5">
-  <div class="row">
-  <table class="table table-striped" id="myTable">
-    <tbody>
-                                <?php foreach ($produk as $p) : ?>
-                                    <td>
-                                    <div class="card">
-            <img class="card-img-top" src="<?=base_url($p['foto_produk'])?>" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-                                    </td>
-                                <?php endforeach; ?>
-                                </tbody>
-                        </table>
+    <h2 class="display-1 lh-1 mb-3 text-black">Produk Sociolla</h2>
+    <div class="row">
+      <?php
+      $no = 1;
+      foreach ($list_data->result() as $data) { ?>
+      <div class="col-3 mb-3">
+        <div class="card">
+             <img class="card-img-top" src="<?= base_url($data->foto); ?>" alt="Card image cap">
+             <div class="card-body">
+               <h5 class="card-title"><?=$data->nama_produk?></h5>
+               <p class="card-text"><?=$data->deskripsi?></p>
+               <p class="mb-0 text-pink">Price: IDR <?=$data->harga?></p>
+               <p class="mb-3" style="right:0">Stok: <?=$data->stok?></p>
+               <a href="#" class="btn btn-pink-dark">Beli Sekarang</a>
+             </div>
+           </div>
+      </div>
+      <?php $no++;
+      } ?>
 
-</div>
     </div>
+  </div>
 </section>
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#myTable').DataTable();
-    });
-</script>
